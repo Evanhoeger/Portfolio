@@ -27,6 +27,39 @@
   }
 }
 
+.companies {
+  background: #fff;
+  padding: 8rem 0 2rem 0;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    border: 1px solid #e6e6e6;
+    border-radius: 6px;
+    background: #fff;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10rem;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 24rem;
+    height: auto;
+  }
+}
+
 // Careers section with job cards
 .careers {
   background: #fafafa;
