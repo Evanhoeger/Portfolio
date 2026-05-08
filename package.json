@@ -1,0 +1,20 @@
+{
+  "name": "evan-hoeger-portfolio",
+  "version": "1.0.0",
+  "description": "Evan Hoeger's personal portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "sass --watch sass/main.scss css/style.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
+    "compress:css": "sass css/style.css css/style.css --style=compressed",
+    "build": "npm-run-all prefix:css compress:css"
+  },
+  "author": "Evan Hoeger",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.77.8",
+    "postcss-cli": "^8.3.1"
+  }
+}
