@@ -1,43 +1,21 @@
-# Dopefolio 🔥
+# Evan Hoeger Portfolio
 
-## A Blazing Fast Multipage Portfolio Template for Developers 🚀
+Personal portfolio website for Evan Hoeger.
 
-## [Demo Link](https://dopefolio.netlify.app) 🔗
+## Setup
 
-<div align="center">
-  <img src="https://i.postimg.cc/CxZXqhWM/ezgif-com-video-to-gif-1.gif" alt="Dopefolio Demo" width="100%" />
-  <br>
-</div>
+```bash
+npm install
+npm run compile:scss
+```
 
-<br/>
-<br/>
+Open `index.html` in your browser or use Live Server.
 
----
+## Notes
 
-<br/>
-
-## ( Update ): Project Achievement 🏆 
-
-**Dopefolio** has been listed as the **Hottest Frontend Tool of 2021** According to **CSS Tricks** 🥳. Thanks to all of you for supporting this project 🙌
-
-**[Link to the CSS tricks article on Dopefolio](https://css-tricks.com/hottest-front-end-tools-in-2021/#aa-58-dopefolio)**   
-
-<br/>
-
-----
-
-<br/>
-
-## Features
-
-- ### **Easy to Setup 💯** 
-- ### **Free to Use ( OpenSource ) 🥳** 
-- ### **No Additional Frameworks 🤘** 
-- ### **No Additional Libraries 🙌** 
-- ### **Multi Page 💎** 
-- ### **Fully Responsive 🚀** 
-- ### **Super Fast and Optimized for SEO ⚡** 
-- ### **Great Audits Score 🎖️** 
+- The site is based on the Dopefolio layout, but the branding and package metadata now reflect this project.
+- Update `index.html`, the project pages, and `assets/` with your own content and images.
+- For GitHub Pages, publish from the `main` branch root and keep `.nojekyll` in place.
 
 <img src="https://i.ibb.co/1dD8Mky/Screenshot-from-2021-08-28-14-38-30.png" alt="Dopefolio Audits" width="100%" />
 
