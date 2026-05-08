@@ -1,8 +1,9 @@
 name: Build and Deploy to GitHub Pages
 
 permissions:
+  contents: read
   pages: write
-  contents: write
+  id-token: write
 
 on:
   push:
@@ -10,9 +11,8 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,9 +28,14 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
+          path: './'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
